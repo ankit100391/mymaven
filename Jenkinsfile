@@ -23,7 +23,7 @@ pipeline {
             }
          }
           stage ('TESTING'){
-                agent {label 'mavem'}
+                agent {label 'maven'}
         steps{
             sh '''
             sleep 5
