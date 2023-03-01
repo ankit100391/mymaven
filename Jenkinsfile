@@ -1,5 +1,8 @@
 pipeline {
       agent none
+      environment {
+  DB_URL = "35.154.149.129"
+}
       stages{
         stage ('BUILD'){
               agent {label 'master'}
