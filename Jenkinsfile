@@ -23,12 +23,6 @@ pipeline {
             sleep 5
              echo "this is TESTING stage"
             '''
-             stage ('triggers') {
-                   steps{
-                         sh '''
-                         cron(CRON_SETTINGS)
-                         echo "this is for trigger"
-                         '''
             }
          }
       }
