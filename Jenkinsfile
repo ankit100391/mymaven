@@ -14,7 +14,7 @@ pipeline {
             }
          }
           stage ('DEPLOY'){
-                agent{label'maven'}
+                agent{label'node1'}
         steps{
             sh '''
             sleep 5
