@@ -12,7 +12,7 @@ pipeline {
             }
          }
           stage ('DEPLOY'){
-                agent{label'node1'}
+                agent{label'slave1'}
         steps{
             sh '''
             sleep 5
@@ -21,7 +21,7 @@ pipeline {
             }
          }
           stage ('TESTING'){
-                agent {label 'node1'}
+                agent {label 'slave1'}
         steps{
             sh '''
             sleep 5
