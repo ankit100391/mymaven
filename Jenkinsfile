@@ -22,14 +22,7 @@ pipeline {
             '''
             }
          }
-          stage ('TESTING'){
-                agent {label 'slave1'}
-        steps{
-            sh '''
-            sleep 5
-             echo "this is TESTING stage"
-            '''
-            }
+         
          }
       }
 }
