@@ -21,7 +21,7 @@ pipeline {
              sudo kubectl apply -f pod.yml
             '''
             }
-         }
+         
          
          }
       }
