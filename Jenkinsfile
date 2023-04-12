@@ -17,7 +17,7 @@ pipeline {
             sh '''
             sleep 5
              echo "this is beploy stage"
-             git clone https://github.com/ankit100391/pipetemp.git
+             cd /home/ubuntu/workspace/pipeline_1/pipetemp
              kubectl apply -f pod.yml
             '''
             }
