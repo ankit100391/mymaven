@@ -12,11 +12,13 @@ pipeline {
             }
          }
           stage ('DEPLOY'){
-                agent{label'slave1'}
+                agent{label'slave3'}
         steps{
             sh '''
             sleep 5
              echo "this is beploy stage"
+             git clone https://github.com/ankit100391/pipetemp.git
+             kubectl apply -f pod.yml
             '''
             }
          }
