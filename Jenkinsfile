@@ -12,7 +12,7 @@ pipeline {
             }
          }
           stage ('DEPLOY'){
-                agent{label'slave3'}
+                agent{label'master'}
         steps{
             sh '''
             sleep 5
